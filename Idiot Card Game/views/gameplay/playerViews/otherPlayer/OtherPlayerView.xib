@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Bold.otf">
+            <string>Gotham-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="OtherPlayerView" customModule="Idiot_Card_Game" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2f-H1-qXj" userLabel="Display Name View">
+                    <rect key="frame" x="64.5" y="0.0" width="285" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="allioharra" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nd0-vj-dqc" userLabel="Display Name Label">
+                            <rect key="frame" x="0.0" y="23" width="82" height="19"/>
+                            <fontDescription key="fontDescription" name="Gotham-Bold" family="Gotham" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy2-Bg-eDd" userLabel="Piles View">
+                            <rect key="frame" x="90" y="0.0" width="195" height="65"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10_of_clubs" translatesAutoresizingMaskIntoConstraints="NO" id="5Wn-cU-CIy" userLabel="Card Pile 1">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="65"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="YHC-TQ-9VQ"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ace_of_hearts" translatesAutoresizingMaskIntoConstraints="NO" id="TeJ-KP-Sz6" userLabel="Card Pile 2">
+                                    <rect key="frame" x="50" y="0.0" width="45" height="65"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2_of_diamonds" translatesAutoresizingMaskIntoConstraints="NO" id="ocH-2R-ty7" userLabel="Card Pile 3">
+                                    <rect key="frame" x="100" y="0.0" width="45" height="65"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card_back" translatesAutoresizingMaskIntoConstraints="NO" id="IX1-Yv-ngS" userLabel="Hand Pile Background">
+                                    <rect key="frame" x="150" y="0.0" width="45" height="65"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QFh-PF-MWA" userLabel="Card Spacer 1">
+                                    <rect key="frame" x="45" y="0.0" width="5" height="65"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-G0-9wI" userLabel="Card Spacer 2">
+                                    <rect key="frame" x="95" y="0.0" width="5" height="65"/>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVr-yi-0ko" userLabel="Card Spacer 3">
+                                    <rect key="frame" x="145" y="0.0" width="5" height="65"/>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="IX1-Yv-ngS" firstAttribute="width" secondItem="5Wn-cU-CIy" secondAttribute="width" id="0hU-yy-zfR"/>
+                                <constraint firstItem="hVr-yi-0ko" firstAttribute="width" secondItem="QFh-PF-MWA" secondAttribute="width" id="1jl-Ue-qdm"/>
+                                <constraint firstItem="QFh-PF-MWA" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="2xz-gX-qZa"/>
+                                <constraint firstItem="hVr-yi-0ko" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="5fR-rN-n3Y"/>
+                                <constraint firstAttribute="bottom" secondItem="ocH-2R-ty7" secondAttribute="bottom" id="9fd-GZ-uKw"/>
+                                <constraint firstItem="IX1-Yv-ngS" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="Aob-PY-zdU"/>
+                                <constraint firstAttribute="bottom" secondItem="5Wn-cU-CIy" secondAttribute="bottom" id="Ebe-cw-IPU"/>
+                                <constraint firstAttribute="trailing" secondItem="IX1-Yv-ngS" secondAttribute="trailing" id="Fqu-km-IfM"/>
+                                <constraint firstItem="TeJ-KP-Sz6" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="HOm-gE-o3t"/>
+                                <constraint firstItem="kIb-G0-9wI" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="I5I-BR-vVr"/>
+                                <constraint firstItem="QFh-PF-MWA" firstAttribute="width" secondItem="kIb-G0-9wI" secondAttribute="width" id="IQz-uY-nX8"/>
+                                <constraint firstItem="hVr-yi-0ko" firstAttribute="leading" secondItem="ocH-2R-ty7" secondAttribute="trailing" id="M82-Sp-J3E"/>
+                                <constraint firstItem="5Wn-cU-CIy" firstAttribute="leading" secondItem="Gy2-Bg-eDd" secondAttribute="leading" id="SaX-pp-J7v"/>
+                                <constraint firstAttribute="bottom" secondItem="QFh-PF-MWA" secondAttribute="bottom" id="c6n-nD-iKw"/>
+                                <constraint firstItem="ocH-2R-ty7" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="cz6-SK-N4g"/>
+                                <constraint firstItem="5Wn-cU-CIy" firstAttribute="top" secondItem="Gy2-Bg-eDd" secondAttribute="top" id="d7i-5T-EmD"/>
+                                <constraint firstAttribute="bottom" secondItem="hVr-yi-0ko" secondAttribute="bottom" id="fHh-gf-eY1"/>
+                                <constraint firstItem="IX1-Yv-ngS" firstAttribute="leading" secondItem="hVr-yi-0ko" secondAttribute="trailing" id="gvB-LE-1xs"/>
+                                <constraint firstItem="5Wn-cU-CIy" firstAttribute="width" secondItem="ocH-2R-ty7" secondAttribute="width" id="htw-5h-D4q"/>
+                                <constraint firstAttribute="bottom" secondItem="TeJ-KP-Sz6" secondAttribute="bottom" id="kW6-Pb-9Lr"/>
+                                <constraint firstItem="ocH-2R-ty7" firstAttribute="leading" secondItem="kIb-G0-9wI" secondAttribute="trailing" id="lO4-lk-4Pn"/>
+                                <constraint firstItem="TeJ-KP-Sz6" firstAttribute="leading" secondItem="QFh-PF-MWA" secondAttribute="trailing" id="sCb-MT-nbk"/>
+                                <constraint firstItem="5Wn-cU-CIy" firstAttribute="width" secondItem="TeJ-KP-Sz6" secondAttribute="width" id="sQx-RP-cMX"/>
+                                <constraint firstAttribute="width" constant="195" id="sd5-uu-aaA"/>
+                                <constraint firstItem="kIb-G0-9wI" firstAttribute="leading" secondItem="TeJ-KP-Sz6" secondAttribute="trailing" id="tXb-oG-yY4"/>
+                                <constraint firstAttribute="bottom" secondItem="IX1-Yv-ngS" secondAttribute="bottom" id="uQC-LZ-PU5"/>
+                                <constraint firstItem="QFh-PF-MWA" firstAttribute="leading" secondItem="5Wn-cU-CIy" secondAttribute="trailing" id="wMM-me-fjf"/>
+                                <constraint firstAttribute="bottom" secondItem="kIb-G0-9wI" secondAttribute="bottom" id="wUX-s8-Pz1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Gy2-Bg-eDd" secondAttribute="bottom" id="2P6-0e-jqG"/>
+                        <constraint firstAttribute="trailing" secondItem="Gy2-Bg-eDd" secondAttribute="trailing" id="4LO-lO-CRm"/>
+                        <constraint firstAttribute="height" constant="65" id="80c-NZ-z3j"/>
+                        <constraint firstItem="Nd0-vj-dqc" firstAttribute="leading" secondItem="q2f-H1-qXj" secondAttribute="leading" id="Bxa-B6-L2a"/>
+                        <constraint firstItem="Nd0-vj-dqc" firstAttribute="centerY" secondItem="q2f-H1-qXj" secondAttribute="centerY" id="Tq2-Ep-ipe"/>
+                        <constraint firstItem="Gy2-Bg-eDd" firstAttribute="leading" secondItem="Nd0-vj-dqc" secondAttribute="trailing" constant="8" symbolic="YES" id="qv1-jV-xJ9"/>
+                        <constraint firstItem="Gy2-Bg-eDd" firstAttribute="top" secondItem="q2f-H1-qXj" secondAttribute="top" id="xE9-JH-34i"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+            <constraints>
+                <constraint firstItem="q2f-H1-qXj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="1cO-2h-Dtc"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="q2f-H1-qXj" secondAttribute="trailing" constant="8" id="AIj-Jq-2uV"/>
+                <constraint firstItem="q2f-H1-qXj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T1d-A9-IAO"/>
+                <constraint firstItem="q2f-H1-qXj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Zcz-2N-aNI"/>
+                <constraint firstAttribute="bottom" secondItem="q2f-H1-qXj" secondAttribute="bottom" id="dic-mJ-8ec"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="displayNameLabel" destination="Nd0-vj-dqc" id="pe4-DS-rOA"/>
+                <outlet property="pile1ImageView" destination="5Wn-cU-CIy" id="jQU-nV-XAf"/>
+                <outlet property="pile2ImageView" destination="TeJ-KP-Sz6" id="DxQ-pt-SbR"/>
+                <outlet property="pile3ImageView" destination="ocH-2R-ty7" id="VJs-R1-e7p"/>
+            </connections>
+            <point key="canvasLocation" x="176.81159420289856" y="-76.674107142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="10_of_clubs" width="500" height="726"/>
+        <image name="2_of_diamonds" width="500" height="726"/>
+        <image name="ace_of_hearts" width="500" height="726"/>
+        <image name="card_back" width="120" height="170"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

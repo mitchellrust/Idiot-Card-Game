@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8286ACA0503780323699E87F /* Pods_Idiot_Card_Game.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19CA811B37D83F2251E276F7 /* Pods_Idiot_Card_Game.framework */; };
+		F007519F25A73C1E0089314E /* Idiot_Card_Game.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F007519D25A73C1E0089314E /* Idiot_Card_Game.xcdatamodeld */; };
+		F00751A425A740FF0089314E /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00751A325A740FF0089314E /* extensions.swift */; };
+		F00751A725A741490089314E /* fsstorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00751A625A741490089314E /* fsstorage.swift */; };
+		F013183E25AA747B0084A64F /* validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F013183D25AA747B0084A64F /* validation.swift */; };
+		F02050DD25B10E850024E1B1 /* BottomPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02050DC25B10E850024E1B1 /* BottomPlayerView.xib */; };
+		F02050E025B10F5B0024E1B1 /* BottomPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02050DF25B10F5B0024E1B1 /* BottomPlayerView.swift */; };
+		F0518D2625AE503D008CE11C /* OtherPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0518D2425AE503D008CE11C /* OtherPlayerView.swift */; };
+		F0518D2725AE503D008CE11C /* OtherPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F0518D2525AE503D008CE11C /* OtherPlayerView.xib */; };
+		F0518D2B25AE5093008CE11C /* NibWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0518D2925AE5093008CE11C /* NibWrapperView.swift */; };
+		F0518D2C25AE5093008CE11C /* NibWrapped.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0518D2A25AE5093008CE11C /* NibWrapped.swift */; };
+		F058680925A794D000A3258B /* GameLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F058680825A794D000A3258B /* GameLobbyViewController.swift */; };
+		F05928AE25AE63B1008B1877 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F05928AD25AE63B0008B1877 /* CardCell.xib */; };
+		F05928B125AE64BF008B1877 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05928B025AE64BF008B1877 /* CardCell.swift */; };
+		F05928B425AE698F008B1877 /* PlayerHandFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05928B325AE698F008B1877 /* PlayerHandFlowLayout.swift */; };
+		F0830F4425A74C2B00333ABA /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0830F4125A74C2A00333ABA /* Gotham-Black.otf */; };
+		F0830F4525A74C2B00333ABA /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0830F4225A74C2A00333ABA /* Gotham-Bold.otf */; };
+		F0830F4625A74C2B00333ABA /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0830F4325A74C2A00333ABA /* Gotham-Light.otf */; };
+		F088A66A25ABB6F8005E9905 /* GameTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F088A66925ABB6F7005E9905 /* GameTableViewController.swift */; };
+		F0ADE49E25A7346F0038A252 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE48B25A7346E0038A252 /* HomeViewController.swift */; };
+		F0ADE4A525A7346F0038A252 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE49525A7346E0038A252 /* WelcomeViewController.swift */; };
+		F0ADE4A625A7346F0038A252 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE49625A7346E0038A252 /* MainController.swift */; };
+		F0ADE4A825A7346F0038A252 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE49925A7346E0038A252 /* PreferencesViewController.swift */; };
+		F0ADE4AA25A7346F0038A252 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE49B25A7346E0038A252 /* ProfileViewController.swift */; };
+		F0ADE4AB25A7346F0038A252 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE49C25A7346E0038A252 /* SupportViewController.swift */; };
+		F0ADE4B825A7375C0038A252 /* authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE4B525A7375C0038A252 /* authentication.swift */; };
+		F0ADE4BA25A7375C0038A252 /* cloudfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE4B725A7375C0038A252 /* cloudfs.swift */; };
+		F0ADE4C325A738360038A252 /* CoreDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE4C225A738350038A252 /* CoreDataController.swift */; };
+		F0ADE4DA25A739EA0038A252 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ADE4D625A739EA0038A252 /* User.swift */; };
+		F0C17DA125A91B740051BBEF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C17DA025A91B740051BBEF /* Game.swift */; };
+		F0C9FAB025A730A000A3A50C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9FAAF25A730A000A3A50C /* AppDelegate.swift */; };
+		F0C9FAB225A730A000A3A50C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C9FAB125A730A000A3A50C /* SceneDelegate.swift */; };
+		F0C9FAB725A730A000A3A50C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C9FAB525A730A000A3A50C /* Main.storyboard */; };
+		F0C9FAB925A730A400A3A50C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0C9FAB825A730A400A3A50C /* Assets.xcassets */; };
+		F0C9FABC25A730A400A3A50C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C9FABA25A730A400A3A50C /* LaunchScreen.storyboard */; };
+		F0C9FAC525A731ED00A3A50C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0C9FAC425A731ED00A3A50C /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		19CA811B37D83F2251E276F7 /* Pods_Idiot_Card_Game.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Idiot_Card_Game.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8B18D35B8646CEC93435048 /* Pods-Idiot Card Game.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idiot Card Game.release.xcconfig"; path = "Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game.release.xcconfig"; sourceTree = "<group>"; };
+		F007519E25A73C1E0089314E /* Idiot_Card_Game.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Idiot_Card_Game.xcdatamodel; sourceTree = "<group>"; };
+		F00751A325A740FF0089314E /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		F00751A625A741490089314E /* fsstorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fsstorage.swift; sourceTree = "<group>"; };
+		F013183D25AA747B0084A64F /* validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validation.swift; sourceTree = "<group>"; };
+		F02050DC25B10E850024E1B1 /* BottomPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomPlayerView.xib; sourceTree = "<group>"; };
+		F02050DF25B10F5B0024E1B1 /* BottomPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPlayerView.swift; sourceTree = "<group>"; };
+		F0518D2425AE503D008CE11C /* OtherPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherPlayerView.swift; sourceTree = "<group>"; };
+		F0518D2525AE503D008CE11C /* OtherPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherPlayerView.xib; sourceTree = "<group>"; };
+		F0518D2925AE5093008CE11C /* NibWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibWrapperView.swift; sourceTree = "<group>"; };
+		F0518D2A25AE5093008CE11C /* NibWrapped.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibWrapped.swift; sourceTree = "<group>"; };
+		F058680825A794D000A3258B /* GameLobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLobbyViewController.swift; sourceTree = "<group>"; };
+		F05928AD25AE63B0008B1877 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		F05928B025AE64BF008B1877 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		F05928B325AE698F008B1877 /* PlayerHandFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerHandFlowLayout.swift; sourceTree = "<group>"; };
+		F0830F4125A74C2A00333ABA /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		F0830F4225A74C2A00333ABA /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		F0830F4325A74C2A00333ABA /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		F088A66925ABB6F7005E9905 /* GameTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewController.swift; sourceTree = "<group>"; };
+		F0ADE48B25A7346E0038A252 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F0ADE49525A7346E0038A252 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F0ADE49625A7346E0038A252 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		F0ADE49925A7346E0038A252 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		F0ADE49B25A7346E0038A252 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F0ADE49C25A7346E0038A252 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		F0ADE4B525A7375C0038A252 /* authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = authentication.swift; sourceTree = "<group>"; };
+		F0ADE4B725A7375C0038A252 /* cloudfs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cloudfs.swift; sourceTree = "<group>"; };
+		F0ADE4C225A738350038A252 /* CoreDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataController.swift; sourceTree = "<group>"; };
+		F0ADE4D625A739EA0038A252 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F0C17DA025A91B740051BBEF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F0C9FAAC25A730A000A3A50C /* Idiot Card Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Idiot Card Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C9FAAF25A730A000A3A50C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0C9FAB125A730A000A3A50C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0C9FAB625A730A000A3A50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0C9FAB825A730A400A3A50C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0C9FABB25A730A400A3A50C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0C9FABD25A730A400A3A50C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0C9FAC425A731ED00A3A50C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F3E804CA5EFE7F390DEF0E2B /* Pods-Idiot Card Game.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Idiot Card Game.debug.xcconfig"; path = "Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0C9FAA925A730A000A3A50C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8286ACA0503780323699E87F /* Pods_Idiot_Card_Game.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		743E60B9D4E07AB2C5C70EF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3E804CA5EFE7F390DEF0E2B /* Pods-Idiot Card Game.debug.xcconfig */,
+				B8B18D35B8646CEC93435048 /* Pods-Idiot Card Game.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C679833E3757F63597C8E1DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19CA811B37D83F2251E276F7 /* Pods_Idiot_Card_Game.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F00751A225A740EC0089314E /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F0518D2A25AE5093008CE11C /* NibWrapped.swift */,
+				F0518D2925AE5093008CE11C /* NibWrapperView.swift */,
+				F00751A325A740FF0089314E /* extensions.swift */,
+				F013183D25AA747B0084A64F /* validation.swift */,
+				F05928B325AE698F008B1877 /* PlayerHandFlowLayout.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		F03A8BF325AFCCF800F653BD /* otherPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F0518D2425AE503D008CE11C /* OtherPlayerView.swift */,
+				F0518D2525AE503D008CE11C /* OtherPlayerView.xib */,
+			);
+			path = otherPlayer;
+			sourceTree = "<group>";
+		};
+		F03A8BF625AFCD1300F653BD /* bottomPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F02050DC25B10E850024E1B1 /* BottomPlayerView.xib */,
+				F02050DF25B10F5B0024E1B1 /* BottomPlayerView.swift */,
+			);
+			path = bottomPlayer;
+			sourceTree = "<group>";
+		};
+		F058680725A794AA00A3258B /* gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				F0BF72A325AC18F200BE7F4B /* playerViews */,
+				F058680825A794D000A3258B /* GameLobbyViewController.swift */,
+				F088A66925ABB6F7005E9905 /* GameTableViewController.swift */,
+			);
+			path = gameplay;
+			sourceTree = "<group>";
+		};
+		F05928AB25AE6362008B1877 /* customCells */ = {
+			isa = PBXGroup;
+			children = (
+				F05928AD25AE63B0008B1877 /* CardCell.xib */,
+				F05928B025AE64BF008B1877 /* CardCell.swift */,
+			);
+			path = customCells;
+			sourceTree = "<group>";
+		};
+		F0830F4025A74C2A00333ABA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F0830F4125A74C2A00333ABA /* Gotham-Black.otf */,
+				F0830F4225A74C2A00333ABA /* Gotham-Bold.otf */,
+				F0830F4325A74C2A00333ABA /* Gotham-Light.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		F0ADE48825A7346E0038A252 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE49625A7346E0038A252 /* MainController.swift */,
+				F0ADE49525A7346E0038A252 /* WelcomeViewController.swift */,
+				F0ADE48B25A7346E0038A252 /* HomeViewController.swift */,
+				F058680725A794AA00A3258B /* gameplay */,
+				F0ADE49825A7346E0038A252 /* profile */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F0ADE49825A7346E0038A252 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE49925A7346E0038A252 /* PreferencesViewController.swift */,
+				F0ADE49B25A7346E0038A252 /* ProfileViewController.swift */,
+				F0ADE49C25A7346E0038A252 /* SupportViewController.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		F0ADE4B425A737340038A252 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				F00751A625A741490089314E /* fsstorage.swift */,
+				F0ADE4C225A738350038A252 /* CoreDataController.swift */,
+				F0ADE4B525A7375C0038A252 /* authentication.swift */,
+				F0ADE4B725A7375C0038A252 /* cloudfs.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		F0ADE4D425A739EA0038A252 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				F0ADE4D625A739EA0038A252 /* User.swift */,
+				F0C17DA025A91B740051BBEF /* Game.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		F0BF72A325AC18F200BE7F4B /* playerViews */ = {
+			isa = PBXGroup;
+			children = (
+				F03A8BF625AFCD1300F653BD /* bottomPlayer */,
+				F03A8BF325AFCCF800F653BD /* otherPlayer */,
+				F05928AB25AE6362008B1877 /* customCells */,
+			);
+			path = playerViews;
+			sourceTree = "<group>";
+		};
+		F0C9FAA325A730A000A3A50C = {
+			isa = PBXGroup;
+			children = (
+				F0C9FAAE25A730A000A3A50C /* Idiot Card Game */,
+				F0830F4025A74C2A00333ABA /* fonts */,
+				F0C9FAAD25A730A000A3A50C /* Products */,
+				743E60B9D4E07AB2C5C70EF7 /* Pods */,
+				C679833E3757F63597C8E1DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0C9FAAD25A730A000A3A50C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0C9FAAC25A730A000A3A50C /* Idiot Card Game.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0C9FAAE25A730A000A3A50C /* Idiot Card Game */ = {
+			isa = PBXGroup;
+			children = (
+				F0C9FAAF25A730A000A3A50C /* AppDelegate.swift */,
+				F0C9FAB125A730A000A3A50C /* SceneDelegate.swift */,
+				F0C9FABD25A730A400A3A50C /* Info.plist */,
+				F0C9FAC425A731ED00A3A50C /* GoogleService-Info.plist */,
+				F007519D25A73C1E0089314E /* Idiot_Card_Game.xcdatamodeld */,
+				F0C9FAB825A730A400A3A50C /* Assets.xcassets */,
+				F0C9FAB525A730A000A3A50C /* Main.storyboard */,
+				F0C9FABA25A730A400A3A50C /* LaunchScreen.storyboard */,
+				F00751A225A740EC0089314E /* helpers */,
+				F0ADE4D425A739EA0038A252 /* models */,
+				F0ADE4B425A737340038A252 /* services */,
+				F0ADE48825A7346E0038A252 /* views */,
+			);
+			path = "Idiot Card Game";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0C9FAAB25A730A000A3A50C /* Idiot Card Game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C9FAC025A730A400A3A50C /* Build configuration list for PBXNativeTarget "Idiot Card Game" */;
+			buildPhases = (
+				D154082997F8AA27E09A08F2 /* [CP] Check Pods Manifest.lock */,
+				F0C9FAA825A730A000A3A50C /* Sources */,
+				F0C9FAA925A730A000A3A50C /* Frameworks */,
+				F0C9FAAA25A730A000A3A50C /* Resources */,
+				B5ED2BF3A0391A22D6527F4C /* [CP] Embed Pods Frameworks */,
+				03863FA6B971CE8CB25C2755 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Idiot Card Game";
+			productName = "Idiot Card Game";
+			productReference = F0C9FAAC25A730A000A3A50C /* Idiot Card Game.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0C9FAA425A730A000A3A50C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					F0C9FAAB25A730A000A3A50C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = F0C9FAA725A730A000A3A50C /* Build configuration list for PBXProject "Idiot Card Game" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0C9FAA325A730A000A3A50C;
+			productRefGroup = F0C9FAAD25A730A000A3A50C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0C9FAAB25A730A000A3A50C /* Idiot Card Game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0C9FAAA25A730A000A3A50C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0830F4525A74C2B00333ABA /* Gotham-Bold.otf in Resources */,
+				F0C9FABC25A730A400A3A50C /* LaunchScreen.storyboard in Resources */,
+				F02050DD25B10E850024E1B1 /* BottomPlayerView.xib in Resources */,
+				F0C9FAC525A731ED00A3A50C /* GoogleService-Info.plist in Resources */,
+				F0830F4625A74C2B00333ABA /* Gotham-Light.otf in Resources */,
+				F0C9FAB925A730A400A3A50C /* Assets.xcassets in Resources */,
+				F0830F4425A74C2B00333ABA /* Gotham-Black.otf in Resources */,
+				F0518D2725AE503D008CE11C /* OtherPlayerView.xib in Resources */,
+				F05928AE25AE63B1008B1877 /* CardCell.xib in Resources */,
+				F0C9FAB725A730A000A3A50C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03863FA6B971CE8CB25C2755 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5ED2BF3A0391A22D6527F4C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Idiot Card Game/Pods-Idiot Card Game-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D154082997F8AA27E09A08F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Idiot Card Game-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0C9FAA825A730A000A3A50C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0518D2625AE503D008CE11C /* OtherPlayerView.swift in Sources */,
+				F0ADE4AB25A7346F0038A252 /* SupportViewController.swift in Sources */,
+				F05928B125AE64BF008B1877 /* CardCell.swift in Sources */,
+				F0ADE4C325A738360038A252 /* CoreDataController.swift in Sources */,
+				F0518D2B25AE5093008CE11C /* NibWrapperView.swift in Sources */,
+				F0ADE4BA25A7375C0038A252 /* cloudfs.swift in Sources */,
+				F00751A425A740FF0089314E /* extensions.swift in Sources */,
+				F007519F25A73C1E0089314E /* Idiot_Card_Game.xcdatamodeld in Sources */,
+				F0518D2C25AE5093008CE11C /* NibWrapped.swift in Sources */,
+				F0ADE4A525A7346F0038A252 /* WelcomeViewController.swift in Sources */,
+				F0ADE4A625A7346F0038A252 /* MainController.swift in Sources */,
+				F0ADE4DA25A739EA0038A252 /* User.swift in Sources */,
+				F013183E25AA747B0084A64F /* validation.swift in Sources */,
+				F0ADE4AA25A7346F0038A252 /* ProfileViewController.swift in Sources */,
+				F058680925A794D000A3258B /* GameLobbyViewController.swift in Sources */,
+				F0ADE4A825A7346F0038A252 /* PreferencesViewController.swift in Sources */,
+				F0C9FAB025A730A000A3A50C /* AppDelegate.swift in Sources */,
+				F00751A725A741490089314E /* fsstorage.swift in Sources */,
+				F0C17DA125A91B740051BBEF /* Game.swift in Sources */,
+				F05928B425AE698F008B1877 /* PlayerHandFlowLayout.swift in Sources */,
+				F02050E025B10F5B0024E1B1 /* BottomPlayerView.swift in Sources */,
+				F0C9FAB225A730A000A3A50C /* SceneDelegate.swift in Sources */,
+				F088A66A25ABB6F8005E9905 /* GameTableViewController.swift in Sources */,
+				F0ADE49E25A7346F0038A252 /* HomeViewController.swift in Sources */,
+				F0ADE4B825A7375C0038A252 /* authentication.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0C9FAB525A730A000A3A50C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0C9FAB625A730A000A3A50C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0C9FABA25A730A400A3A50C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0C9FABB25A730A400A3A50C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0C9FABE25A730A400A3A50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F0C9FABF25A730A400A3A50C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0C9FAC125A730A400A3A50C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E804CA5EFE7F390DEF0E2B /* Pods-Idiot Card Game.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A582HMEZQ9;
+				INFOPLIST_FILE = "Idiot Card Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchellrust.Idiot-Card-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F0C9FAC225A730A400A3A50C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8B18D35B8646CEC93435048 /* Pods-Idiot Card Game.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A582HMEZQ9;
+				INFOPLIST_FILE = "Idiot Card Game/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mitchellrust.Idiot-Card-Game";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0C9FAA725A730A000A3A50C /* Build configuration list for PBXProject "Idiot Card Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C9FABE25A730A400A3A50C /* Debug */,
+				F0C9FABF25A730A400A3A50C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C9FAC025A730A400A3A50C /* Build configuration list for PBXNativeTarget "Idiot Card Game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C9FAC125A730A400A3A50C /* Debug */,
+				F0C9FAC225A730A400A3A50C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F007519D25A73C1E0089314E /* Idiot_Card_Game.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F007519E25A73C1E0089314E /* Idiot_Card_Game.xcdatamodel */,
+			);
+			currentVersion = F007519E25A73C1E0089314E /* Idiot_Card_Game.xcdatamodel */;
+			path = Idiot_Card_Game.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F0C9FAA425A730A000A3A50C /* Project object */;
+}
